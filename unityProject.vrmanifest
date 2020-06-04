@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.towerdawgs.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "Z:\\TowerDawgs\\TowerDawgs\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "Z:\\TowerDawgz\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "TowerDawgs [Testing]"

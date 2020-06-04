@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public SteamVR_Action_Vector2 input;
     public float speed = 1;
     private CharacterController characterController;
+    public bool canClimb = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,19 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 direction = Player.instance.hmdTransform.TransformDirection(new Vector3(input.axis.x, 0, input.axis.y));
 
-        characterController.Move(speed * Time.deltaTime * Vector3.ProjectOnPlane(direction, Vector3.up) - new Vector3(0, 9.81f, 0) * Time.deltaTime);
+        if (canClimb)
+        {
+            //ClimbingStuff(Hand.transform.localPosition);
+        }
+        else
+        {
+            characterController.Move(speed * Time.deltaTime * Vector3.ProjectOnPlane(direction, Vector3.up) - new Vector3(0, 9.81f, 0) * Time.deltaTime);
+        }
+    }
+
+    // Move the player relative to the local position of the hand controller.
+    void ClimbingStuff(Vector3 gripPos)
+    {
+        characterController.transform.position += gripPos;
     }
 }
