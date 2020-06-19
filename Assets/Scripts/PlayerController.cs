@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Vector3 direction = Player.instance.hmdTransform.TransformDirection(new Vector3(input.axis.x, 0, input.axis.y));
+        Debug.Log(direction);
 
         if (canClimb)
         {
