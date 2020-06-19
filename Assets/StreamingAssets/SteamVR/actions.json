@@ -45,6 +45,14 @@
       "type": "vector2"
     },
     {
+      "name": "/actions/default/in/Climb",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/HandPosition",
+      "type": "vector3"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -93,6 +101,10 @@
     },
     {
       "name": "/actions/mixedreality",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/Climbing",
       "usage": "single"
     }
   ],
@@ -159,7 +171,9 @@
       "/actions/default/in/Teleport": "Teleport",
       "/actions/default/out/Haptic": "Haptic",
       "/actions/platformer/in/Jump": "Jump",
-      "/actions/default/in/Movement": "TouchPad"
+      "/actions/default/in/Movement": "TouchPad",
+      "/actions/default/in/Climb": "ClimbGrip",
+      "/actions/default/in/HandPosition": "HandPosition"
     }
   ]
 }

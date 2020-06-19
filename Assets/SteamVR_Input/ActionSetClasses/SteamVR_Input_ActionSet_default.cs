@@ -97,6 +97,22 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean Climb
+        {
+            get
+            {
+                return SteamVR_Actions.default_Climb;
+            }
+        }
+        
+        public virtual SteamVR_Action_Vector3 HandPosition
+        {
+            get
+            {
+                return SteamVR_Actions.default_HandPosition;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get
